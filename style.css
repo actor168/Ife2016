@@ -1,0 +1,124 @@
+.aDiv{
+	background-image:linear-gradient(rgba(153,153,153,.65) 0,rgba(153,153,153,.65) 100%);
+	color:white;
+	height:auto;
+	width:1000px;
+	position:relative;
+	margin:50px auto;animation-delay:1s;
+    -webkit-animation-delay:1s;
+	-webkit-animation:mymove 2s ;
+}
+.logo{
+	width:80%;	
+}
+
+.input_search{
+	width:500px;
+	text-align:left;
+	float:center;
+	height:40px;
+	border:solid #ccc 1px;
+	font-size:20px;
+	padding-left:10px;
+	vertical-align:middle;
+}
+
+.input :focus{
+	border:solid #4791ff 1px;
+}
+.icon_search{
+	width:20px;
+	height:30px;
+	text-align:right;
+	background: #fff 			     background-image:url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/soutu_icons_6eead741.png) no-repeat 0;}
+.btn_search{
+	vertical-align:middle;
+	width:120px;
+	height:40px;
+	border:none;
+	background-color:#4791ff;
+	font-size:18px;
+	color:white;	
+	text-align:center;}
+.main{
+	clear:both;
+	vertical-align:top;
+	text-align:center;
+	margin:20px auto;
+	-webkit-animation:search_move 0.5s;
+}
+@-webkit-keyframes search_move{
+	from{
+		margin-top:0px;
+	}
+	to{
+		margin-top:20px;
+		visibility:visible;
+		}
+}
+@-webkit-keyframes mymove{
+	from{
+		margin:100px auto;
+		display:none;
+	}
+	to{
+		margin:50px auto;
+		display:block;
+	}
+}
+body{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-color:rgb(255, 255, 255);background-image:url("https://ss3.bdstatic.com/lPoZeXSm1A5BphGlnYG/skin/2.jpg?2");
+	width:1200px;
+	height:100%;
+	position:relative;
+	margin:0 auto;
+	text-decoration:none;
+}
+.span_show{
+	height:30px;
+	width:120px;
+	display:inline-block;
+	text-align:center;
+	float:left;
+	padding-top:15px;
+	cursor:pointer;
+	color:#000;
+	border-bottom:thin  #000;
+}
+
+.item{
+	background-color:#FFF;
+	width:120px;
+	height:40px;
+	color:#000;
+	text-align:center;
+	padding-top:20px;
+	margin-left:15px;
+	vertical-align:middle;
+	text-decoration:none;
+	float:left;
+
+	}
+.web{
+	text-decoration:none;
+	color:#000;
+	padding-left:5px;
+	vertical-align:middle;
+}
+.comment {
+	display:none;
+	background-color:#FF0;
+	font-size:12px;
+	height:15px;
+	margin-top:5px;
+	text-decoration:underline;
+}
+.foot{
+	padding-top:50px;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	
+	}
