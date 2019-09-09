@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+</head>
+<body>
+	<button id="title" style="width: 100px; height: 38px;" onclick="add();">时间</button>
+	<script type="text/javascript">
+		var evntId;
+		var out = 10;
+		function add() {
+			out = 10;
+			evntId = window.setInterval(setTime, 1000);
+		}
+		
+		function setTime() {
+			out--;
+			var btn = document.getElementById("title");
+			if (out <= 0) {
+				btn.innerText = "点击"
+				btn.removeAttribute("disabled");
+				clearInterval(evntId);
+			} else {
+				btn.disabled = "disabled";
+				btn.innerText = out;
+			}
+		}
+	</script>
+</body>
+</html>
